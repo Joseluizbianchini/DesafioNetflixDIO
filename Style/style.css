@@ -1,193 +1,134 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
-/*INICIO RESET CSS */
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
+:root{
+  --vermelho:#E50914;
+  --preta:#141414;
 }
 
-/* HTML5 display-role reset for older browsers */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-  display: block;
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
 }
 
-body {
-  line-height: 1;
+/*elementos base*/
+body{
+ background: var(--preta);
+ font-family: 'Arial', Times, serif;
+ color:white;
 }
 
-ol,
-ul {
-  list-style: none;
-}
 
-blockquote,
-q {
-  quotes: none;
-}
-
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-  content: '';
-  content: none;
-}
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-/*FINAL RESET CSS */
-/* Variaveis para setar a cor, precisando mudar somente em um local*/
-:root {
-  --vermelho: #E50914;
-  --preto: #141414;
-}
-
-body {
-  background: var(--preto);
-  font-family: 'Times New Roman', Times, serif;
-  color: white;
-}
-
-header .container {
-  display: flex;
+header .container{
+  display:flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  
 }
 
-header .logo {
+header .logo{
   margin-left: 5px;
   color: var(--vermelho);
   font-family: 'Arial Black', Times;
-  font-size: 40px;
+  font-size:40px;
 }
 
-header nav a {
-  text-decoration: none;
-  color: #aaa;
+header nav a{
+  text-decoration:none;
+  color:#AAA;
   margin-right: 10px;
 }
 
-header nav a:hover {
-  color: #fff;
+
+header nav a:hover{
+  color:#fff;
 }
 
-/*Filme Principal*/
-.filme-principal {
-  font-size: 16px;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/img/IMGHouseOFcards.jpg');
-  background-size: cover;
-  background-repeat: no-repeat; 
-  height: 400px;
+/*filme principal*/
+.filme-principal{
+  font-size:16px;
+  background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('/img/IMGHouseOFcards.jpg');
+
+  height:400px;
+  background-size:cover;
+
+
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
 }
+
+
 .filme-principal .descricao{
+  margin-top: 10px;
   margin-bottom: 40px;
 }
 
-.titulo{
+
+.filme-principal .titulo{
+  margin-top: 15%;
   font-size: 40px;
+  font-family: 'Trebuchet MS', Arial, sans-serif;
 }
+
+.botao{
+  background-color: rgba(0,0,0,.50);
+  border:none;
+  color: white;
+
+  padding:15px 30px;
+  margin-right: 15px;
+  font-size: 12px;
+
+  cursor: pointer;
+  transition: .3s ease all;
+}
+
+.botao:hover{
+  background-color:white;
+  color:black;
+}
+
+.botao i{
+  margin-right: 8px;
+}
+
+
+.container{
+  margin-left: 20px;
+}
+
+.filme-principal .container{
+  width: 70%;
+}
+
+.box-filme{
+  height: 100%;
+  width: 100%;
+  display: block;
+  cursor: pointer;
+}
+
+
+.carrosel-filmes{
+  margin-top:5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
